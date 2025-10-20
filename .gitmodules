@@ -1,0 +1,6 @@
+[submodule "Elhaykal-service"]
+	path = Elhaykal-service
+	url = https://github.com/Distributed-Fall-25/Elhaykal-service.git
+[submodule "Elhaykal-client"]
+	path = Elhaykal-client
+	url = git@github.com:Distributed-Fall-25/Elhaykal-client.git

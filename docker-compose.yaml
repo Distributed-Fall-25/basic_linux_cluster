@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile.server
+    networks:
+      - rust_lan
+    ports:
+      - "8080"
+      - "443"
+    environment:
+      - RUST_LOG=info
+      - SERVER_PORT=8080
+      - HTTPS_PORT=443
+    volumes:
+      - ./Elhaykal-service:/workspace
+    working_dir: /workspace
+    command: tail -f /dev/null
+
+  client:
+    build:
+      context: .
+      dockerfile: Dockerfile.client
+    networks:
+      - rust_lan
+    environment:
+      - RUST_LOG=info
+    volumes:
+      - ./Elhaykal-client:/workspace
+    working_dir: /workspace
+    depends_on:
+      - server
+    command: tail -f /dev/null
+
+networks:
+  rust_lan:
+    driver: bridge
