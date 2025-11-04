@@ -26,10 +26,13 @@ services:
       dockerfile: Dockerfile.client
     networks:
       - rust_lan
+    ports:
+      - "8080:8080"
     environment:
       - RUST_LOG=info
     volumes:
       - ./Elhaykal-client:/workspace
+      - ./web-ui:/web-ui
     working_dir: /workspace
     depends_on:
       - server
