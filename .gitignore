@@ -1,0 +1,53 @@
+# Temporary files
+README-leader-buffer.md
+
+# Firebase secrets (NEVER commit these!)
+firebase-config.json
+client-config.json
+
+# Rust
+target/
+**/*.rs.bk
+*.pdb
+Cargo.lock
+*.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv
+*.egg-info/
+dist/
+build/
+
+# Node.js / React
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+react-client/.env
+react-client/.env.local
+react-client/build/
+react-client/coverage/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Test files
+*.xlsx
+*.csv
+.~lock.*
+
+# Logs
+*.log
