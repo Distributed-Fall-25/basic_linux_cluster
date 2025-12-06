@@ -34,6 +34,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 ```bash
 nvm install 24.11.1
 ```
+
 > Latest as of writing
 
 - Navigate to `Elhaykal-frontend` and run:
@@ -42,6 +43,9 @@ nvm install 24.11.1
 npm install
 npm run dev
 ```
+
+>[!NOTE]
+> If you still get the same error make sure your shell is updated, do `source ~./bashrc` to do that. 
 
 You should see the UI at http://localhost:5173/
 
