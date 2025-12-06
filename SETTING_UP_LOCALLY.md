@@ -24,6 +24,9 @@ git checkout wui
 
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+```
+
+```bash
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm for current session
 ```
@@ -46,10 +49,10 @@ You should see the UI at http://localhost:5173/
 ## Elhaykal-Client & Elhaykal-Service
 
 - Make sure you are on `wui` branch
+
 ```
 git fetch
 git checkout wui
-
 ```
 - Then just run `cargo run`
 
