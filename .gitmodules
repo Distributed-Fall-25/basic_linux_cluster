@@ -4,6 +4,6 @@
 [submodule "Elhaykal-client"]
 	path = Elhaykal-client
 	url = git@github.com:Distributed-Fall-25/Elhaykal-client.git
-[submodule "Elhaykal-client"]
+[submodule "Elhaykal-frontend"]
 	path = Elhaykal-frontend
 	url = git@github.com:Distributed-Fall-25/Elhaykal-frontend.git
