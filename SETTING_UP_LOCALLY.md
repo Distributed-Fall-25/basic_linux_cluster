@@ -55,8 +55,8 @@ git checkout wui
 
 ## Precaution
 
->[!WARN]
+>[!WARNING]
 > There will be some warmup time before the frontend Clients (Elhaykal-frontend) connect to their middleware (Elhaykal-client)
 
->[!WARN]
+>[!WARNING]
 > To shutdown a server Terminate the `Elhaykal-client` program for inactivity 
